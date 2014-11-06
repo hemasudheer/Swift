@@ -64,6 +64,15 @@ var Ages = [String : Int]()
 Ages["hema"] = 26
 
 
+airports
+
+for airportCode in airports.keys {
+    println("Airport code: \(airportCode)")
+}
+
+
+
+
 
 
 
