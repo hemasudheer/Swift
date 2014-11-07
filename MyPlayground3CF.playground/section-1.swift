@@ -49,3 +49,19 @@ case (0, let y):
 case let (x, y):
     println("somewhere else at (\(x), \(y))")
 }
+
+let integerToDescribe = 22
+var description = "The number \(integerToDescribe) is"
+switch integerToDescribe {
+case 2, 3, 5, 7, 11, 13, 17, 19:
+    description += " a prime number, and also"
+    
+case 20, 22, 24:
+    description += " a even number grerater than 20"
+    
+    fallthrough
+    
+default:
+    description += " an integer."
+}
+println(description)
